@@ -1,0 +1,20 @@
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.Razor
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<div>
+    @if (SignInManager.IsSignedIn(User))
+    {
+        var user = UserManager.GetUserAsync(User).Result;
+        <p>Welcome, @user.UserName!</p>
+        <form asp-area="Identity" asp-page="/Account/Logout" method="post" class="form-inline my-2 my-lg-0">
+            <button type="submit" class="btn btn-link nav-link">Logout</button>
+        </form>
+    }
+    else
+    {
+        <a asp-area="Identity" asp-page="/Account/Login" class="nav-link">Login</a>
+        <a asp-area="Identity" asp-page="/Account/Register" class="nav-link">Register</a>
+    }
+</div>
