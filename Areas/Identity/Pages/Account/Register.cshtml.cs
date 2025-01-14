@@ -18,7 +18,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
-using ProjectAlfa.Entities;
+using ProjectAlfa.Entities.AuthorizationEntities;
 
 namespace ProjectAlfa.Areas.Identity.Pages.Account
 {
