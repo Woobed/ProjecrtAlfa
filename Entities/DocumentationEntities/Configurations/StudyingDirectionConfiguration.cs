@@ -19,8 +19,7 @@ namespace ProjectAlfa.Entities.DocumentationEntities.Configurations
                 .HasForeignKey(sd=>sd.GroupNumber);
 
             builder.HasMany(sd => sd.Profiles)
-                .WithOne(p => p.Direction)
-                .HasForeignKey(p => p.DirectionCode);
+                .WithOne(p => p.Direction);
 
         }
     }

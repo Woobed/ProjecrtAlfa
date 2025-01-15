@@ -16,6 +16,9 @@ namespace ProjectAlfa.Entities.DocumentationEntities.Configurations
             builder.HasOne(p => p.Direction)
                 .WithMany(sd => sd.Profiles)
                 .HasForeignKey(p=>p.DirectionCode);
+
+            builder.HasMany(p => p.Competencies)
+                .WithOne(c => c.Profile);
         }
     }
 }

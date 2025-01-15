@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using ProjectAlfa.ApplicationDbContext;
-using ProjectAlfa.Entities;
+using ProjectAlfa.Entities.AuthorizationEntities;
 using ProjectAlfa.SendEmail;
 
 namespace ProjectAlfa;

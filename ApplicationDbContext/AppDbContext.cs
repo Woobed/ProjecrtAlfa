@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using ProjectAlfa.Entities;
+using ProjectAlfa.Entities.AuthorizationEntities;
 
 namespace ProjectAlfa.ApplicationDbContext;
 
